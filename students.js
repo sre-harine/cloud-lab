@@ -1,11 +1,11 @@
-const router=require('express').Router();
+/*const router=require('express').Router();
 const Stud=require('./model/Stud');
 
 router.get('/',(req,res)=>{
     res.send('student management');
 });
 
-router.get('/newstudents',async(req,res)=>{
+router.get('/',async(req,res)=>{
         const liststuds=await Stud.find({});
         try {
             res.send(liststuds);
@@ -14,7 +14,7 @@ router.get('/newstudents',async(req,res)=>{
           } 
 });
 
-router.post('/newstudents',async(req,res)=>{   
+router.post('/',async(req,res)=>{   
        const std={
            name:req.body.name,
            rollno:req.body.rollno,
@@ -30,7 +30,7 @@ router.post('/newstudents',async(req,res)=>{
       }
 });
 
-router.delete("/student", async(req,res) => {
+router.delete("/", async(req,res) => {
     try {
       const del = await Stud.findOneAndDelete({"name":"nive"});
   
@@ -64,3 +64,4 @@ router.put("/:id", async(req,res) => {
   });  
 
 module.exports=router;
+*/
